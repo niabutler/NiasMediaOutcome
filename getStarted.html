@@ -1,0 +1,188 @@
+<html lang="en">
+<head>
+  <title>Home</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;1,400&display=swap');
+    body{
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      
+      font-size: 100%;
+      
+    }
+
+    .nav-container{
+	    max-width: 90%;
+	    margin: auto;
+}
+    .bg-img {
+  /* The image used */
+  background-image: url("images/carousel_ngauruhoe.jpg");
+
+  min-height: 75%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: static;
+}
+.overlay {
+  position: absolute; 
+  bottom: 0; 
+  background: rgb(0, 0, 0);
+  background: rgba(0, 0, 0, 0.5); /* Black see-through */
+  color: #f1f1f1; 
+  width: 100%;
+  transition: .5s ease;
+  opacity:0;
+  color: white;
+  font-size: 20px;
+  padding: 20px;
+  text-align: center;
+  margin: auto;
+}
+
+.container1:hover .overlay {
+  opacity: 1;}
+
+.text-block {
+top: 50%;
+left: 50%;
+position: relative;
+background-color: rgba(0, 0, 0, 0.5);
+color: white;
+padding: 20px;
+}
+
+hr{
+  line-height: 3px;
+}
+  
+    </style>
+</head>
+
+<body>
+  <div class="bg-img">
+    <nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-center">
+      <a class="navbar-brand" href="index.html">
+        <img src="images/escape2.svg" width="200" height="50" alt="">
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link font-weight-bolder"  href="index.html">HOME</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="experience.html">EXPERIENCE</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="resources.html">RESOURCES</a>
+          </li>
+          <li class="nav-item">
+              <a class="nav-link" href="getStarted.html">GET STARTED</a>
+            </li>
+        </ul>
+      </div>
+    </nav>
+  </div>
+
+
+
+
+<div class="container-fluid">
+<div class="container p-3 my-3 text-grey">
+<h1 class="text-center">Get Started</h1><br>
+<h5 class="text-success font-weight-light"> Sign up to our newletter to recieve the latest information and any updates!</h5><br>
+
+
+<form action="/action_page.php">
+  <div class="form-group">
+      <div class="row">
+        <div class="col">
+    <label for="email" class="mr-sm-2">First name:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter first name" id="fn"><br>
+  </div>
+  <div class="col">
+    <label for="email" class="mr-sm-2">Last name:</label>
+    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter last name" id="ln"><br>
+  </div></div>
+  <div class="row">
+    <div class="col">
+    <select name="Age" class="custom-select mr-sm-2">
+      <option selected>Age</option>
+      <option value="u14">under 14yrs</option>
+      <option value="14">14</option>
+      <option value="15">15</option>
+      <option value="16">16</option>
+      <option value="17-24">17-24yrs</option>
+    </select>
+    </div>
+
+    <div class="col">
+    <input type="text" class="form-control mb-2 mr-sm-2" placeholder="Enter your school" id="school">
+  </div>
+  <div class="col">
+    <div class="custom-control custom-checkbox">
+      <input type="checkbox" class="custom-control-input" id="customCheck" name="checkbox1">
+      <label class="custom-control-label" for="customCheck">Does your school participate in DOE?</label>
+    </div>
+  </div>
+      
+  </div>
+    <br><label for="email">Contact Details:</label>
+    <input type="email" class="form-control" placeholder="Enter email" id="email"><br>
+    <input type="text" class="form-control" placeholder="Enter contact number" id="contactNumber"><br><br>
+    
+    <p>Which level of the award are you registering for?</p>
+    <div class="col">
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customRadio1" name="bronze">
+      <label class="custom-control-label" for="customRadio1">Bronze Award (14+)</label>
+    </div>
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customRadio2" name="silver">
+      <label class="custom-control-label" for="customRadio2">Silver Award (15+)</label>
+    </div>
+    <div class="custom-control custom-checkbox custom-control-inline">
+      <input type="checkbox" class="custom-control-input" id="customRadio3" name="gold">
+      <label class="custom-control-label" for="customRadio3">Gold Award (16+)</label>
+    </div>
+  </div><br><br>
+
+
+    <label for="email">Parent/Legal Guardian Details:</label>
+    <input type="text" class="form-control" placeholder="Enter full name" id="p/lgN"><br>
+    <input type="email" class="form-control" placeholder="Enter email" id="email"><br>
+    <input type="text" class="form-control" placeholder="Enter contact number" id="email"><br>
+  </div>
+  <div class="custom-control custom-checkbox">
+    <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
+    <label class="custom-control-label" for="customCheck">Subscribe to our email services</label>
+  </div>
+  <br><p class="text-success font-weight-light">Thank you for registering with us, good luck!</p>
+  <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+
+</div>
+</div>
+
+<div class="footer">
+  <div class=" card bg-dark text-light text-center">
+    <p> This is a footer</p>
+  </div>
+
+</body>

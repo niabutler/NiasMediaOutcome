@@ -1,0 +1,483 @@
+<!DOCTYPE html>
+<html lang="en"> 
+
+    <head>
+        <meta charset='UTF-8'/>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title> Fiona Haines Dance Academy </title>
+        <link href="https://fonts.googleapis.com/css?family=Herr+Von+Muellerhoff|Tajawal|Tangerine&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Crimson+Text|Open+Sans&display=swap" rel="stylesheet">
+
+        <style> 
+
+            body{
+                margin: auto;
+            }
+
+
+            /* ---- navigation bar ---- */
+            .nav{
+                list-style: none;
+            }
+
+            .nav li{
+                display: inline;
+            }
+
+            .nav li a{
+                padding-right: 80px;
+                padding-left: 80px;
+                letter-spacing: 0.5px;
+                /* font syling goes here */
+                font-family: 'Tajawal', sans-serif;
+                margin-left: 5px;
+                font-size: 0.75em;
+                letter-spacing: 0.5;
+                width: 100%;
+
+            }
+
+            a:link{
+                text-decoration: none;
+                background-color: rgb(255,255,255);
+                color: rgb(256,183,194);
+
+            }
+
+            a:visited{
+                text-decoration: none;
+                background-color: rgb(255,255,255);
+                color: rgb(256,183,194);
+                border-bottom: 4px solid rgb(256,183,194);
+            }
+
+
+            a:hover{
+                color: rgb(256,183,194);
+                border-bottom: 4px solid rgb(256,183,194);
+            }
+
+            .container{
+                background-color: rgb(255,255,255);
+                padding-bottom: 5px;
+                padding-top: 5px;
+                font-size: 1.75em;
+                text-align: center;
+                width: 100%;
+            }
+
+
+            /* ---- main box etc. ----*/
+            .mainBox{
+                width: 90%;
+                background-color: rgb(255,255,255);
+                border-bottom: 3px solid rgb(256,183,194);
+                margin: auto;
+                overflow: hidden; 
+                align-content: center;
+                padding-bottom: 3%;
+                padding-top: 0%;
+                padding-left: 3%;
+                padding-right: 3%;
+            }
+
+            .col{
+                box-sizing: border-box;
+                width: 50%;
+                padding: 10px;
+                background-color: rgb(255,255,255);
+                float: left;
+                height: 100%;
+            }
+
+            .col-2{
+                box-sizing: border-box;
+                width: 50%;
+                padding: 10px;
+                float: right;
+                background-color: rgb(255,255,255);
+                height: 100%;
+                overflow: hidden;
+            }
+
+            .img-responsive{
+                max-width: 100%;
+                width: auto;
+                display: block;
+                margin: auto;
+            }
+
+            .img-centre{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            
+            .img-circ{
+               border-radius: 50%;
+                display: block;
+                margin: auto;
+            }
+
+            
+           .Tdiv{
+            width: 100%;
+            background-color: rgb(255,255,255);
+            margin: auto;
+            overflow: hidden; 
+            align-content: center;
+            box-sizing: border-box;
+               
+            padding-bottom: 0%;
+            padding-top: 3%;
+            padding-left: 3%;
+            padding-right: 3%;
+              
+            }
+        
+
+            h1{
+                font-size: 6em;
+                font-weight: 100;
+                color: rgb(256,183,194);
+                font-family: 'Crimson Text', serif;
+                padding: 0;
+                margin: 0;
+            }
+
+            .find-us{
+                font-size: 1em;
+                font-weight: 100;
+                color: rgb(256,183,194);
+                font-family: 'Crimson Text', serif;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+            }
+
+            h{
+                font-size: 6em;
+                font-weight: 100;
+                color: rgb(256,183,194);
+                font-family: 'Crimson Text', serif;
+                padding: 0;
+                margin: 0;
+                text-align: center;
+                float: inherit;
+            }
+
+            p{
+              font-family: 'Open Sans', sans-serif;
+              color: rgb(128,128,128);
+              padding: 5px;
+            line-height:inherit;
+            }
+
+            /*--- gallery stuff ---*/
+            
+            /*.gallery-mb{
+                padding-top: 25%;
+                padding-bottom: 30%;
+                padding-left: 20%;
+                padding-right: 20%;
+                width: 100%;
+                height: auto;
+                background-color: rgb(238,238,238);
+                margin: auto;
+            } */
+/*
+            div.gallery{
+                margin: auto; 
+                float: left;
+                display: block;
+                background-color: rgb(238,238,238);
+                padding-top: 25%;
+                padding-bottom: 30%;
+                padding-left: 20%;
+                padding-right: 20%;
+                width: 100%;
+                height: auto;
+                background-color: rgb(238,238,238);
+                border: 3px solid green;
+            }
+            */
+/*
+            div.gallery img{
+                width: 25%;
+                height: auto;
+                border: 10px solid blue;
+                padding: 20%;
+            }
+*/
+            div.gallery:hover {
+                border: 5px rgb(128,128,128);
+                box-shadow: 20px 20px 10px grey;
+            }
+
+            div.desc {
+                padding: 15px;
+                width: 243px;
+                text-align: center;
+                background-color: white;
+                font-family: 'Tajawal', sans-serif;
+                border: 1px solid rgb(128,128,128);
+                box-shadow: 5px 5px 10px grey;  
+                font-style: italic;
+            }
+
+            .responsive {
+                padding: 2.5%;
+                float: left;
+                width: auto;
+                align-content: center;
+            }
+
+            @media only screen and (max-width: 700px) {
+                .responsive {
+                    width: 49.99999%;
+                    margin: 6px 0;
+                }}
+
+
+            @media only screen and (max-width: 500px) {
+                .responsive {
+                    width: 100%;
+                }}
+
+
+            .clearfix:after {
+                content: "";
+                display: table;
+                clear: both;
+                background-color: rgb(238,238,238);
+            }
+
+            .textbox{
+                margin-left: auto;
+                margin-right: auto;
+                width: 50%;
+
+            }
+            
+            button{
+                background-color: lightgreen;
+                display: block;
+                padding: 15px 32px;
+                float: right;
+               
+                
+            }
+
+            .sub-footer{
+                background-color: rgb(105,105,105);
+                color: rgb(255,255,255);
+                padding: 20px;
+                font-family: 'Open Sans', sans-serif;
+
+            }
+            .footer{
+                background-color: rgb(105,105,105);
+                color: rgb(255,255,255);
+                padding: 20px;
+                text-align: center;
+                font-family: 'Open Sans', sans-serif;
+            }
+
+        </style>
+        <body>
+
+            <div id="navbar" class="container"> 
+            <ul class="nav">
+                <li><a href="#About" > About     </a></li> 
+                <li><a href="#Teachers" > Teachers  </a></li>
+                <li><a href="#Community" > Community </a></li>
+                <li><a href="#Find us" > Find us   </a></li>
+                <li><a href="#Gallery" > Gallery   </a></li>
+
+            </ul>
+            </div>
+
+            <img class="img-responsive" src="images/kezia-floor-wide-text2.jpg">
+
+
+
+            <!-- About us -->
+
+            <div class="mainBox"> 
+                <div class="col" > 
+                    <h1 id="About" > About </h1>
+                    <p> We are a local dance studio specialising in RAD Ballet and NZAMD Jazz and have been running since 1996. We also offer contemporary, hip hop and lyrical classes as well as private tuition. The classes are taught by Fiona Haines, Chantelle Scoon and Emma Maddock and are located in Karori, Wellington. All of our classes are for students aged 3-18 years with an exception for hip hop which starts at age 7. We have a 100% exam pass rate, experienced and motivating teachers, fantastic end of year shows and fun, hardworking classes. We have also recently moved into a new studio. </p>
+                </div>
+                
+               <div style="clear:both; overflow: hidden;"><a href="#"><button> back to top </button> </a></div>
+                    
+                
+                
+            </div>
+
+
+            <!-- Teachers -->
+
+            <div class="Tdiv">
+                <div class="col">
+                    <h1 id="Teachers"> Teachers </h1>
+                    <p> Fiona Haines - Principle, Ballet teacher</p>
+                    <p> Classical – ARAD (Advanced Ballet), RDTS (Teachers exam - Distinction) <br>
+                        Jazz – ANZAMD (Advanced Jazz) <br>
+                        Training  – NZ School of Dance (Wellington) and 
+                        National Theatre Ballet School (Melbourne)
+                        FHDA has been running since 1996 </p>
+                    <hr>
+                </div>
+                <div class="col-2">
+                    <img class="img-circ" src="images/Emma-headshot.jpg">
+                </div>
+            </div>
+                
+            <div class="Tdiv">
+                <div class="col">
+                    <p> Chantelle Scoon - Jazz</p>
+                    <p> Chantelle began dancing at the age of 5, learning jazz, ballet, tap, lyrical and contemporary and she has successfully been awarded Solo Seal Diplomas for jazz and ballet in 2009.  After receiving several performing arts scholarships, Chantelle attended full time contemporary and classical training at Unitec in Auckland. She trained under New Zealand Dance Company’s Sarah Foster-Sproull, Michael Parmenter and Kimbrian Bergh. Chantelle moved back to Wellington and has taught NZAMD jazz and competition work for various studios. In 2018 Chantelle took a group of FHDA students to LA to dance at Disneyland, and is planning on taking dancers to New York and Florida in 2020. This will be Chantelle’s 6th year with Fiona Haines Dance Academy</p>
+
+                    <hr>
+                </div>
+                <div class="col-2">
+                    <img class="img-circ" src="images/Chantelle-headshot.jpg">
+                </div>
+            </div>
+                    
+            <div class="Tdiv">
+                <div class="col">
+                    <p> Emma Maddock - Junior Jazz and contemporary </p>
+                    <p> Emma studied full time dance in Melbourne at Jason Coleman's Ministry of Dance specializing in contemporary and commercial dance. She has since worked at events throughout Australia and New Zealand, including Australia's Got Talent, the Logie Awards as well as music videos with Delta Goodrem and Kimbra. Emma currently choreographs for the pre-professional commercial dance students at Te Auaha in Wellington.  This is Emma’s 5th year teaching at Fiona Haines Dance Academy</p>
+
+                </div>
+                <div class="col-2">
+
+                        <img class="img-circ" src="images/Emma-headshot.jpg">
+                </div>
+            </div>
+
+    
+            <div class="mainBox">
+            </div>
+
+
+            <!-- Gallery -->
+            
+
+        <div id="Gallery" class=".gallery-mb"> 
+
+                    <div class="responsive">
+                        <div class="div.gallery">
+                            <div class="div.gallery img">
+                                <a target="_blank" href="#">
+                            <img src="images/aidan-gallery.jpg" alt="This image is of a boy kneeling on one knee" align="middle">
+                                    </a>
+                                <div class="desc">Aidan Riches, senior student</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="div.gallery">
+                            <div class="div.gallery img"> 
+                                <a target="_blank" href="#">
+                                    <img src="images/shackel-arabesque2-gallery.jpg" alt="This image is of a boy kneeling on one knee" align="middle">
+                                </a>
+                                    <div class="desc">India Shackel, senior student</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="div.gallery">
+                            <div class="div.gallery img">
+                                <a target="_blank" href="#">
+                                <img src="images/shackel-attitude-gallery.jpg" alt="This image is of a boy kneeling on one knee" align="middle">
+                                </a>
+                                <div class="desc">India Shackel, senior student</div>
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="responsive">
+                        <div class="div.gallery">
+                            <div class="div.gallery img">
+                                <a target="_blank" href="#">
+                            <img src="images/shackel-ponche-gallery.jpg" alt="This image is of a boy kneeling on one knee" align="middle">
+                                    </a>
+                                <div class="desc">India Shackel, senior student</div>
+                            </div>
+                        </div>
+                    </div>
+
+                  <div class="clearfix"></div>     
+            </div>
+            
+
+
+            <!-- Community -->
+
+            <div class="mainBox"> 
+                <div class="col">
+                    <h1 id="Community"> Community </h1>
+                    <p> Follow us on 
+                    <a href="https://www.instagram.com/fionahainesdance/" target="_blank"> Instagram </a> and 
+                    <a href="https://www.facebook.com/fionahainesdance/"  target="_blank"> Facebook </a>  to stay updated!
+                        <br> 
+                        Parents and students are also able to join our schools private Facebook group used for selling uniform etc.  Just request to join. 
+
+                    </p>
+                </div>
+
+                <div class="col-2"> 
+                    <img class="img-responsive" src="images/Perform.JPG" alt="This is an image of a group dance from a troupe at local competition">
+                </div>
+            </div>
+
+
+
+                <!-- Find us -->
+
+            <div class="mainBox">
+
+                <div class="find-us">
+                    <h1 id="Find us"> Find Us</h1>
+                </div>
+                    <div class="textbox"> 
+                    <p> Our main studio is located at 282b Karori Road, next to the BP and St Anselms hall is located at 30 Makara Road. <br>
+                        To get in touch, call Fiona on 021721020, preferably during school hours (9.15am - 3.00pm) or email f.haines.dance@gmail.com. <br><br>
+                        Fiona Haines - 021 721 020 <br>
+                        Chantelle Scoon - 027 844 3033 <br>
+                        Emma Maddock - 020 4032 7295 
+                         </p>
+
+                        </div>
+
+                <div class="img-centre"> 
+                    <img class="img-responsive" src="images/FHDAmap.jpg" alt="This is an image of a girl doing a ponche">
+                </div>
+            </div>
+
+
+
+
+
+            <!-- Footer -->
+        <div class="sub-footer"> 
+            <h5> Contact Fiona Haines on 021721020 or via email:   f.haines.dance@gmail.com. </h5>
+        </div>
+
+        <div class="footer">
+            <h5> &copy; Fiona Haines Dance Academy, Nia Butler 2019</h5>
+        </div>
+
+    
+            
+        </body>
+    </head>
+</html>
