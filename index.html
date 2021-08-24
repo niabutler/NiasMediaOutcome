@@ -37,31 +37,54 @@
   position: static;
 }
 .overlay {
-  position:static;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 1.0em;
+  padding-left: 2em;
+  padding-right: 2em;;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: .5s ease;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+}
+
+.over-set:hover .overlay {
+  opacity: 0;
+}
+
+.over-set:hover .overlay-detail{
+        opacity: 1;
+    }
+
+.overlay-detail{ 
+  position: absolute;
   top: 0;
   bottom: 0;
   left: 0;
   right: 0;
   height: 100%;
   width: 100%;
-  opacity: 0;
-  transition: .5s ease;
-  background-color: rgba(255,255,255,0.5);
+  font-size: 1em;
+  color:white;
+  background-color: rgba(100,100,100,0.7);
+  padding: 1.5em; 
+  transition: 1s ease;
+  opacity:0;
 }
 
-.container:hover .overlay {
-  opacity: 1;
+.text{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translate(0%, -50%);
+  padding: 2em;
+  text-align: center;
+  cursor: default;
 }
 
-.text-block {
-top: -50%;
-left: 25%;
-position: relative;
-background-color: rgba(0, 0, 0, 0.5);
-color: white;
-padding: 15px;
-width: 50%;
-}
+
 
 hr{
   line-height: 3px;
@@ -114,33 +137,40 @@ hr{
 
 <div class="container p-3 my-3 text-grey"">
   <div class="container-fluid text-grey text-center"> 
-    
-  <div class="card-deck align-content">
 
-      <div class="container1">
-        <img class="card-img" src="images/bronze.jpg" alt="street">
-        <div class="text-block">
-          <a class="text-white"href="experience.html"><h5>Bronze</h5></a>
-        </div>
-        
+    <div class="row">
+
+      <div class="container1 position-relative over-set">
+        <img class="img-fluid" src="images/bronze.jpg" alt="street">
+        <div class="overlay"><p> Bronze</p></div>
+        <div class="overlay-detail">
+          <div class="text"> For young people aged 14+. <br>The Bronze Level involves hours of service, physical 
+            recreation and skill. For more information click <a class="text-white" href="experience.html">here.</a></div>
       </div>
+    </div>
+
+    <div class="container1 position-relative over-set">
+      <img class="img-fluid" src="images/silver.jpg" alt="street">
+      <div class="overlay"><p> Silver</p></div>
+      <div class="overlay-detail">
+        <div class="text"> For young people aged 15+. <br>The Silver Level involves hours of service, physical 
+          recreation and skill. For more information click <a class="text-white" href="experience.html">here.</a></div>
+    </div>
+  </div>
 
   
-      <div class="container1">
-          <img class="card-img" src="images/silver.jpg" alt="street">
-          <div class="text-block">
-            <a class="text-white"href="experience.html"><h5>Silver</h5></a>
-          </div>
-          </div>
-    
-  
-          <div class="container1">
-            <img class="card-img" src="images/gold.jpg" alt="street">
-            <div class="text-block">
-              <a class="text-white"href="experience.html"><h5>Gold</h5></a>
-            </div>
-          </div>
-        </div>
+  <div class="container1 position-relative over-set">
+    <img class="img-fluid" src="images/gold.jpg" alt="street">
+    <div class="overlay"><p> Gold</p></div>
+    <div class="overlay-detail">
+      <div class="text"> For young people aged 16+. <br> The Gold Level involves hours of service, physical 
+        recreation, skill and a Residential Project. For more information click <a class="text-white" href="experience.html">here.</a>.</div>
+  </div>
+</div>
+
+
+
+      </div>
   </div>
   </div>
  
