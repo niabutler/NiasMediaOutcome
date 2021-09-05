@@ -22,11 +22,18 @@
 	    max-width: 90%;
 	    margin: auto;
 }
+
+.nav{
+  float: right;
+  width: 25%;
+  text-align: center;
+  overflow:visible;
+}
     .bg-img {
   /* The image used */
   background-image: url("images/carousel_sunset.jpg");
 
-  min-height: 75%;
+  min-height: 60%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -40,7 +47,7 @@
   position:absolute;
   top: 50%;
   left: 50%;
-  padding-top: 1.0em;
+  padding-top: 1.25em;
   padding-left: 2em;
   padding-right: 2em;;
   transform: translate(-50%, -50%);
@@ -48,6 +55,7 @@
   transition: .5s ease;
   color: white;
   background-color: rgba(0,0,0,0.5);
+  border-radius: 0.2em;
 }
 
 .over-set:hover .overlay {
@@ -62,16 +70,17 @@
   position: absolute;
   top: 0;
   bottom: 0;
-  left: 0;
+  left: 4.1%;
   right: 0;
   height: 100%;
-  width: 100%;
+  width: 92%;
   font-size: 1em;
   color:white;
-  background-color: rgba(100,100,100,0.7);
-  padding: 1.5em; 
+  background-color: rgba(45,48,58,0.7);
+  padding: 0em; 
   transition: 1s ease;
   opacity:0;
+  align-content: center;
 }
 
 .text{
@@ -84,8 +93,6 @@
   cursor: default;
 }
 
-
-
 hr{
   line-height: 3px;
 }
@@ -96,31 +103,57 @@ hr{
   align-content: center;
   margin: 0.7%;
 }
+
+.h7{
+  font-size: 3.5em;
+}
+
+.bottom-left1 {
+  position: absolute;
+  bottom: 12%;
+  left: 8%;
+  color: whitesmoke;
+  font-size: 1.7em;
+  text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+  font-weight: lighter;
+}
+.bottom-left2 {
+  position: absolute;
+  bottom: 4%;
+  left: 8%;
+  color: whitesmoke;
+  font-size: 1em;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  font-weight: lighter;
+}
+
+.bg-style{
+  color: rgba(0,0,0,0.5);
+
+}
     </style>
 </head>
 
 <body>
   <div class="bg-img">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-center">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/escape2.svg" width="200" height="50" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar navbar-expand-sm navbar-light bg-style">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-center"  id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link font-weight-bolder"  href="index.html">HOME</a></h4>
+          <li class="nav-item font-weight-bolder">
+            <a class="nav-link px-2"  href="index.html">HOME</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <a class="nav-link" href="experience.html">EXPERIENCE</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <a class="nav-link" href="resources.html">RESOURCES</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="getStarted.html">GET STARTED</a>
+          <li class="nav-item px-2">
+              <a class="nav-link"  href="getStarted.html">GET STARTED</a>
             </li>
         </ul>
       </div>
@@ -128,68 +161,74 @@ hr{
   </div>
 
   
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container text-center">
-      <h1>Welcome!</h1>
-      <h5 class="text-success font-weight-light">Escape will provide you with all the information you need to successfully complete your DoE Adventure.</h5>
+  <!--<div class="jumbotron jumbotron-fluid"> -->
+    <div class="container-fluid p-5 text-center bg-white">
+      <div class="h7">Welcome</div>
+      <hr width=20%; color="green"; size="50">
+      <h4 class="text-success font-weight-light">Helping you reach your goals!</h4> 
+      <h4 class="text-dark font-weight-light">We will provide you with the tips and tricks to get you through your 
+        Duke of Edinburgh Adventure.</h4>
     </div>
   </div>
 
 <div class="container p-3 my-3 text-grey"">
   <div class="container-fluid text-grey text-center"> 
 
-    <div class="row">
-
-      <div class="container1 position-relative over-set">
+    <div class="row pb-4">
+      <div class="col-lg-4 position-relative over-set">
         <img class="img-fluid" src="images/bronze.jpg" alt="street">
-        <div class="overlay"><p> Bronze</p></div>
+        <div class="bottom-left1">Bronze Award</div>
+        <div class="bottom-left2">For young people aged 14+</div>
+        <!-- <div class="overlay"><h4>Bronze</p></div> -->
         <div class="overlay-detail">
-          <div class="text"> For young people aged 14+. <br>The Bronze Level involves hours of service, physical 
-            recreation and skill. For more information click <a class="text-white" href="experience.html">here.</a></div>
+          <div class="text">For more information click <a class="text-white" href="experience.html">here.</a></div>
       </div>
     </div>
 
-    <div class="container1 position-relative over-set">
+    <div class="col-lg-4 position-relative over-set">
       <img class="img-fluid" src="images/silver.jpg" alt="street">
-      <div class="overlay"><p> Silver</p></div>
+      <!-- <div class="overlay"><h4> Silver</p></div>-->
+        <div class="bottom-left1">Silver Award</div>
+        <div class="bottom-left2">For young people aged 15+</div>
       <div class="overlay-detail">
-        <div class="text"> For young people aged 15+. <br>The Silver Level involves hours of service, physical 
-          recreation and skill. For more information click <a class="text-white" href="experience.html">here.</a></div>
+        <div class="text">For more information click <a class="text-white" href="experience.html">here.</a></div>
     </div>
   </div>
 
   
-  <div class="container1 position-relative over-set">
+  <div class="col-lg-4 position-relative over-set">
     <img class="img-fluid" src="images/gold.jpg" alt="street">
-    <div class="overlay"><p> Gold</p></div>
+    <!--<div class="overlay"><h4> Gold</p></div>-->
+      <div class="bottom-left1">Gold Award</div>
+      <div class="bottom-left2">For young people aged 16+ </div>
     <div class="overlay-detail">
-      <div class="text"> For young people aged 16+. <br> The Gold Level involves hours of service, physical 
-        recreation, skill and a Residential Project. For more information click <a class="text-white" href="experience.html">here.</a>.</div>
+      <div class="text">For more information click <a class="text-white" href="experience.html">here.</a>.</div>
   </div>
 </div>
 
 
 
       </div>
+      <hr width=20%; color="green"; size="50">
   </div>
   </div>
- 
   
+  <h4 class="font-weight-light text-dark text-center pb-4"> Here is some more information regarding the background of the Award...</h4> 
   <div class="container-fluid bg-light">
     <div class="container p-5 my-3 text-grey">
     <h1 class="text-center">About the Award</h1>
     <h3>What is it?</h3>
-    <h5 class="text-success font-weight-light">The Duke of Edinburgh’s Award is designed to educate young people outside of the classroom.</h5>
-    <p>Open to anyone 14-24 years old,
-    regardless of background, culture, physical ability, skills and interests, the award is perfect for experiencing the outdoors,
-    contributing to the community through service, and learning many new skills. In over 130 countries, this award is recognised
-    world wide and has inspired millions of young people to get up and involve themselves in the world.</p><p></p>The Award is comprised of
+    <h4 class="text-success font-weight-light">The Duke of Edinburgh’s Award is designed to educate young people outside of the classroom. </h5>
+    <p> Open to anyone 14-24 years old,
+      regardless of background, culture, physical ability, skills and interests, the award is perfect for experiencing the outdoors,
+      contributing to the community through service, and learning many new skills.</p> <p>In over 130 countries, this award is recognised
+    world wide and has inspired millions of young people to get up and involve themselves in the world.The Award is comprised of
     three levels and four sections - Skills, Voluntary Service, Physical Recreation and Adventurous Journey. Participants complete
     all four sections at each level in order to achieve their Award. At Gold level, participants also complete a Residential Project. 
     To see the requirements for each level click <a class="text-dark" href="experience.html">here.</a></p>
     <h3>History</h3>
-    <h5 class="text-success font-weight-light"> The Duke of Edinburgh’s International Award was founded in 1956.</h5>
-    <p>HRH Prince Philip, Kurt Hahn, a German educationalist and Lord Hunt, leader of the first successful expedition of Everest 
+    <h4 class="text-success font-weight-light"> The Duke of Edinburgh’s International Award was founded in 1956.</h5>
+    <p class="font-weight-bold">HRH Prince Philip, Kurt Hahn, a German educationalist and Lord Hunt, leader of the first successful expedition of Everest 
       first founded the Duke of Edinburgh Award. The idea came from a concern for the development of boys after World War II, 
       because of the gap between leaving school at 15 and entering the National Service at 18.</p><p>
     inefficient and wasteful, demands from business interests who claim that they can overcome these inefficiencies, and
@@ -199,41 +238,40 @@ hr{
     </div>
   </div>
 
+  <h1 class="text-dark font-weight-light text-center">Gallery</h2>
+    <hr width=20%; color="green"; size="50">
     <div class="container p-5">
-    <div class="card-deck">
-    <div class="card bg-white">
-    <div class="card-body text-center">
-      <img class="card-img" src="images/hut.jpg" alt="street">
+      <div class="row">
+    <div class="col-md-3">
+      <img class="img-fluid" src="images/gal3-.jpg" alt="street">
+      <div class="bottom-left2">Tongariro National Park</div>
+    </div>
+    <div class="col-md-3">
+      <img class="card-img" src="images/gal2-.jpg" alt="street">
+      <div class="bottom-left2">Tongariro National Park</div>
+    </div>
+      <div class="col-md-3">
+        <div class="bottom-left2">Tongariro Alpine Crossing</div>
+      <img class="card-img" src="images/gal1-.jpg" alt="street">
+    </div>
+      <div class="col-md-3">
+      <img class="card-img" src="images/gal4-.jpg" alt="street">
+      <div class="bottom-left2">Bay of Islands</div>
+    </div>
+
     </div>
     </div>
-    <div class="card bg-white">
-    <div class="card-body text-center">
-      <img class="card-img" src="images/hut.jpg" alt="street">
-    </div>
-    </div>
-    <div class="card bg-white">
-    <div class="card-body text-center">
-      <img class="card-img" src="images/hut.jpg" alt="street">
-    </div>
-    </div>
-    <div class="card bg-white">
-    <div class="card-body text-center">
-      <img class="card-img" src="images/hut.jpg" alt="street">
-    </div>
-    </div>
-    </div>
-    </div>  
+
+   
 
 </div>
 </div>
+</div>
+</div>
 
-
-</div>
-</div>
-<div class="footer">
-  <div class=" card bg-dark text-light text-center">
-    <p> This is a footer</p>
-  </div>
-</div>
-</div>
+<div class="container-fluid bg-light text-center p-3">
+  <div class="footer">
+    
+      <h5 class="text-dark font-weight-light">© Escape, Nia Butler 2021 </h6>
+    </div>
 </body>

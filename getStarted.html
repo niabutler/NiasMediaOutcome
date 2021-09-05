@@ -26,7 +26,7 @@
   /* The image used */
   background-image: url("images/carousel_ngauruhoe.jpg");
 
-  min-height: 75%;
+  min-height: 60%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -73,26 +73,24 @@ hr{
 
 <body>
   <div class="bg-img">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-center">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/escape2.svg" width="200" height="50" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-center"  id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link font-weight-bolder"  href="index.html">HOME</a>
+          <li class="nav-item px-2">
+            <a class="nav-link font-weight-bolder"  href="index.html">HOME</a></h4>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <a class="nav-link" href="experience.html">EXPERIENCE</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <a class="nav-link" href="resources.html">RESOURCES</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="getStarted.html">GET STARTED</a>
+          <li class="nav-item px-2">
+              <a class="nav-link"  href="getStarted.html">GET STARTED</a>
             </li>
         </ul>
       </div>
@@ -102,12 +100,17 @@ hr{
 
 
 
-<div class="container-fluid">
-<div class="container p-3 my-3 text-grey">
-<h1 class="text-center">Get Started</h1><br>
-<h5 class="text-success font-weight-light"> Sign up to our newletter to recieve the latest information and any updates!</h5><br>
 
 
+<div class="container-fluid p-3">
+  <br>
+  <h1 class="text-center">Get Started</h1>
+  <hr width=20%; color="green"; size="50">
+<br>
+<h4 class="font-weight-light text-dark text-center pb-2"> Sign up to our newletter to recieve the latest information and any updates!</h4>
+</div>
+
+<div class="container">
 <form action="/action_page.php">
   <div class="form-group">
       <div class="row">
@@ -172,17 +175,19 @@ hr{
     <input type="checkbox" class="custom-control-input" id="customCheck" name="example1">
     <label class="custom-control-label" for="customCheck">Subscribe to our email services</label>
   </div>
-  <br><p class="text-success font-weight-light">Thank you for registering with us, good luck!</p>
-  <button type="submit" class="btn btn-primary">Submit</button>
+  <br><h4 class="text-dark font-weight-light">Thank you for registering with us, we look forward to sharing more with you.</p>
+  <button type="submit" class="btn btn-success">Submit</button>
 </form>
 
 
 </div>
 </div>
+</div>
 
-<div class="footer">
-  <div class=" card bg-dark text-light text-center">
-    <p> This is a footer</p>
-  </div>
+<div class="container-fluid bg-light text-center p-3">
+  <div class="footer">
+    
+      <h5 class="text-dark font-weight-light">© Escape, Nia Butler 2021 </h6>
+    </div>
 
 </body>

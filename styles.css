@@ -1,42 +1,89 @@
-bg-img {
-    /* The image used */
-    background-image: url("img_nature.jpg");
-  
-    min-height: 380px;
-  
-    /* Center and scale the image nicely */
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-  
-    /* Needed to position the navbar */
-    position: relative;
-  }
-  
-  /* Position the navbar container inside the image */
-  .container {
-    position: absolute;
-    margin: 20px;
-    width: auto;
-  }
-  
-  /* The navbar */
-  .topnav {
-    overflow: hidden;
-    background-color: #333;
-  }
-  
-  /* Navbar links */
-  .topnav a {
-    float: left;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
-  
-  .topnav a:hover {
-    background-color: #ddd;
-    color: black;
-  }
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;1,400&display=swap');
+    body{
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      
+      font-size: 100%;
+      
+    }
+
+    .nav-container{
+	    max-width: 90%;
+	    margin: auto;
+}
+    .bg-img {
+  /* The image used */
+  background-image: url("images/carousel_sunset.jpg");
+
+  min-height: 60%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: static;
+}
+.overlay {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 1.25em;
+  padding-left: 2em;
+  padding-right: 2em;;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: .5s ease;
+  color: white;
+  background-color: rgba(0,0,0,0.7);
+  border-radius: 0.2em;
+}
+
+.over-set:hover .overlay {
+  opacity: 0;
+}
+
+.over-set:hover .overlay-detail{
+        opacity: 1;
+    }
+
+.overlay-detail{ 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 4.1%;
+  right: 0;
+  height: 100%;
+  width: 92%;
+  font-size: 1em;
+  color:white;
+  background-color: rgba(45,48,58,0.7);
+  padding: 0em; 
+  transition: 1s ease;
+  opacity:0;
+  align-content: center;
+}
+
+.text{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translate(0%, -50%);
+  padding: 2em;
+  text-align: center;
+  cursor: default;
+}
+
+
+
+hr{
+  line-height: 3px;
+}
+
+
+.container1{
+  padding: 0%;
+  align-content: center;
+  margin: 0.7%;
+}

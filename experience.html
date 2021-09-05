@@ -22,11 +22,18 @@
 	    max-width: 90%;
 	    margin: auto;
 }
+
+.nav{
+  float: right;
+  width: 25%;
+  text-align: center;
+  overflow:visible;
+}
     .bg-img {
   /* The image used */
-  background-image: url("images/carousel_ngauruhoe.jpg");
+  background-image: url("images/carousel_sunset.jpg");
 
-  min-height: 75%;
+  min-height: 60%;
 
   /* Center and scale the image nicely */
   background-position: center;
@@ -37,62 +44,119 @@
   position: static;
 }
 .overlay {
-  position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
-  background: rgba(0, 0, 0, 0.5); /* Black see-through */
-  color: #f1f1f1; 
-  width: 100%;
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 1.25em;
+  padding-left: 2em;
+  padding-right: 2em;;
+  transform: translate(-50%, -50%);
+  opacity: 1;
   transition: .5s ease;
-  opacity:0;
   color: white;
-  font-size: 20px;
-  padding: 20px;
-  text-align: center;
-  margin: auto;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0.2em;
 }
 
-.container1:hover .overlay {
-  opacity: 1;}
+.over-set:hover .overlay {
+  opacity: 0;
+}
 
-.text-block {
-top: 50%;
-left: 50%;
-position: relative;
-background-color: rgba(0, 0, 0, 0.5);
-color: white;
-padding: 20px;
+.over-set:hover .overlay-detail{
+        opacity: 1;
+    }
+
+.overlay-detail{ 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 4.1%;
+  right: 0;
+  height: 100%;
+  width: 92%;
+  font-size: 1em;
+  color:white;
+  background-color: rgba(45,48,58,0.7);
+  padding: 0em; 
+  transition: 1s ease;
+  opacity:0;
+  align-content: center;
+}
+
+.text{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translate(0%, -50%);
+  padding: 2em;
+  text-align: center;
+  cursor: default;
 }
 
 hr{
   line-height: 3px;
 }
-  
+
+
+.container1{
+  padding: 0%;
+  align-content: center;
+  margin: 0.7%;
+}
+
+.h7{
+  font-size: 3.5em;
+}
+
+.bottom-left1 {
+  position: absolute;
+  bottom: 12%;
+  left: 8%;
+  color: whitesmoke;
+  font-size: 1.7em;
+  text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+  font-weight: lighter;
+}
+.bottom-left2 {
+  position: absolute;
+  bottom: 4%;
+  left: 8%;
+  color: whitesmoke;
+  font-size: 1em;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  font-weight: lighter;
+}
+
+.bronze{
+  color: rgb(164,102,42);
+}
+
+.bronzeb{
+  background-color: rgb(164,102,42);
+}
     </style>
 </head>
 
 <body>
   <div class="bg-img">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-center">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/escape2.svg" width="200" height="50" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-center"  id="navbarNav">
         <ul class="navbar-nav">
-          <li class="nav-item">
-            <a class="nav-link font-weight-bolder"  href="index.html">HOME</a>
+          <li class="nav-item px-2">
+            <a class="nav-link font-weight-bolder"  href="index.html">HOME</a></h4>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <a class="nav-link" href="experience.html">EXPERIENCE</a>
           </li>
-          <li class="nav-item">
+          <li class="nav-item px-2">
             <a class="nav-link" href="resources.html">RESOURCES</a>
           </li>
-          <li class="nav-item">
-              <a class="nav-link" href="getStarted.html">GET STARTED</a>
+          <li class="nav-item px-2">
+              <a class="nav-link"  href="getStarted.html">GET STARTED</a>
             </li>
         </ul>
       </div>
@@ -101,21 +165,21 @@ hr{
 
 
 
-<div class="container">
+<div class="container-fluid p-3">
   <br>
   <h1 class="text-center">Experince the Award</h1>
-  
-  <br>
-
+  <hr width=20%; color="green"; size="50">
+<br>
+<h4 class="font-weight-light text-dark text-center pb-2"> Find the requirements for each level of the Award</h4>
 </div>
 
 
 <div class="container-fluid">
-<div class="container p-3 my-3 bg-light text-grey">
+<div class="container p-3 my-3 bg-white text-grey">
 
 
 <p>
-    <button type="button" class="btn btn-danger"><a href="#1" class="text-light">Bronze</a></button>
+    <button type="button" class="btn bronzeb"><a href="#1" class="text-light">Bronze</a></button>
     <button type="button" class="btn btn-secondary"><a href="#2" class="text-light">Silver</a></button>
     <button type="button" class="btn btn-warning"><a href="#3" class="text-dark">Gold</a></button>
 </p><br>
@@ -123,25 +187,25 @@ hr{
 
 
 <h3 id=1>Bronze Award</h3>
-<h6 class="text-success font-weight-light">Ages 14+</h6><br>
+<h5 class="text-success font-weight-light">Ages 14+</h5><br>
 <h6> Requirements</h6>
 
 <ul class="list-group">
-    <li class="list-group-item d-flex justify-content-between align-items-center">
+    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
       Service
-      <span class="badge badge-danger">3 months</span>
+      <span class="badge bronze"><h6>3 months</h6></span>
     </li>
     <li class="list-group-item d-flex justify-content-between align-items-center">
       Physical Recreation
-      <span class="badge badge-danger">3 months</span>
+      <span class="badge bronze"><h6>3 months</h6></span>
     </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
+    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
       Skill
-      <span class="badge badge-danger">3 months</span>
+      <span class="badge bronze"><h6>3 months</h6></span>
     </li>
     <li class="list-group-item d-flex justify-content-between align-items-center">
         Adventurous Journey
-        <span class="badge badge-danger">2 days / 1 night</span>
+        <span class="badge bronze"><h6>2 days / 1 night</h6></span>
       </li>
   </ul><br>
 
@@ -152,25 +216,25 @@ hr{
 </p><br>
 
 <h3 id=2>Silver Award</h3>
-<h6 class="text-success font-weight-light">Ages 15+</h6><br>
+<h5 class="text-success font-weight-light">Ages 15+</h5><br>
 <h6> Requirements</h6>
 
 <ul class="list-group">
-    <li class="list-group-item d-flex justify-content-between align-items-center">
+    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
       Service
-      <span class="badge badge-secondary">6 months</span>
+      <span class="badge text-secondary"><h6>6 months</h6></span>
     </li>
     <li class="list-group-item d-flex justify-content-between align-items-center">
       Physical Recreation
-      <span class="badge badge-secondary">6 months</span>
+      <span class="badge text-secondary"><h6>6 months</h6></span>
     </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
+    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
       Skill
-      <span class="badge badge-secondary">6 months</span>
+      <span class="badge text-secondary"><h6>6 months</h6></span>
     </li>
     <li class="list-group-item d-flex justify-content-between align-items-center">
         Adventurous Journey
-        <span class="badge badge-secondary">3 days / 2 nights</span>
+        <span class="badge text-secondary"><h6>3 days / 2 nights</h6></span>
       </li>
   </ul><br>
 
@@ -183,29 +247,29 @@ hr{
 
 
     <h3 id=3>Gold Award</h3>
-    <h6 class="text-success font-weight-light">Ages 16+</h6><br>
+    <h5 class="text-success font-weight-light">Ages 16+</h5><br>
     <h6> Requirements</h6>
     
     <ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between align-items-center">
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
           Service
-          <span class="badge badge-warning">12 months</span>
+          <span class="badge text-warning"><h6>12 months</span></h6>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
           Physical Recreation
-          <span class="badge badge-warning">12 months</span>
+          <span class="badge text-warning"><h6>12 months</h6></span>
         </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
+        <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
           Skill
-          <span class="badge badge-warning">12 months</span>
+          <span class="badge text-warning"><h6>12 months</h6></span>
         </li>
         <li class="list-group-item d-flex justify-content-between align-items-center">
             Adventurous Journey
-            <span class="badge badge-warning">4 days / 3 nights</span>
+            <span class="badge text-warning"><h6>4 days / 3 nights</h6></span>
           </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center">
+          <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
             Residential Project
-            <span class="badge badge-warning">5 days / 4 nights</span>
+            <span class="badge text-warning"><h6>5 days / 4 nights</h6></span>
           </li>
       </ul><br>
     
@@ -228,12 +292,15 @@ hr{
   
   <div class="carousel-inner">
     <div class="carousel-item active">
+      <div class="bottom-left2">Dragon boating, Wellington Waterfront</div>
       <img class="img-fluid" src="images/carousel_group.jpg" alt="road">
     </div>
     <div class="carousel-item">
+      <div class="bottom-left2">Tongarairo National Park</div>
       <img class="img-fluid" src="images/carousel_ngauruhoe.jpg" alt="water">
     </div>
     <div class="carousel-item">
+      <div class="bottom-left2">Tongarairo National Park</div>
       <img class="img-fluid" src="images/carousel_sunset.jpg" alt="street">
     </div>
   </div>
@@ -252,9 +319,9 @@ hr{
 </div>
 
 <br>
-<div class="footer">
-  <div class=" card bg-dark text-light text-center">
-    <p> This is a footer</p>
-  </div>
+<div class="container-fluid bg-light text-center p-3">
+  <div class="footer">
+        <h5 class="text-dark font-weight-light">© Escape, Nia Butler 2021 </h6>
+    </div>
 
 </body>

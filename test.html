@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Home</title>
+  <title>test page</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -38,11 +38,10 @@
 }
 .overlay {
   position: absolute; 
-  bottom: 0; 
-  background: rgb(0, 0, 0);
+  bottom: 0;
   background: rgba(0, 0, 0, 0.5); /* Black see-through */
   color: #f1f1f1; 
-  width: 100%;
+  width: 95%;
   transition: .5s ease;
   opacity:0;
   color: white;
@@ -64,26 +63,53 @@ color: white;
 padding: 20px;
 }
 
-hr{
-  line-height: 3px;
-}
+.flat{
+    position: relative;
+    background-color: black;
+    height: 2px;
+  }
   
+  .flat .hr-title1{
+    position: absolute;
+    top: -1.25em;
+    left: 0;
+    color: black;
+    padding-right: 2%;
+    padding-bottom: 0;
+    
+  }
+
+  .flat .hr-title2{
+    position: absolute;
+    background-color: white;
+    top: -3em;
+    right: 0;
+    color: black;
+    padding-left: 3%;
+    padding-bottom: 0;
+    padding-top: 0;
+    
+  }
+
+  row{
+    border: 5px;;
+  }
+
+
     </style>
 </head>
 
 <body>
   <div class="bg-img">
-    <nav class="navbar sticky-top navbar-expand-lg navbar-light justify-content-center">
-      <a class="navbar-brand" href="index.html">
-        <img src="images/escape2.svg" width="200" height="50" alt="">
-      </a>
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+    <nav class="navbar sticky-top navbar-expand-sm navbar-light">
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
-      <div class="collapse navbar-collapse" id="navbarNav">
+      <div class="collapse navbar-collapse justify-content-center"  id="navbarNav">
         <ul class="navbar-nav">
           <li class="nav-item">
-            <a class="nav-link font-weight-bolder"  href="index.html">HOME</a>
+            <a class="nav-link font-weight-bolder"  href="index.html">HOME</a></h4>
           </li>
           <li class="nav-item">
             <a class="nav-link" href="experience.html">EXPERIENCE</a>
@@ -92,119 +118,164 @@ hr{
             <a class="nav-link" href="resources.html">RESOURCES</a>
           </li>
           <li class="nav-item">
-              <a class="nav-link" href="getStarted.html">GET STARTED</a>
+              <a class="nav-link"  href="getStarted.html">GET STARTED</a>
             </li>
         </ul>
       </div>
     </nav>
   </div>
 
+
+
   
-  <div class="jumbotron jumbotron-fluid">
-    <div class="container text-center">
-      <h1>Welcome!</h1>
-      <h5>Escape will provide you with all the information you need to successfully complete your DoE Adventure.</h5>
-    </div>
+<div class="container-fluid">
+<div class="container p-3 my-3 text-grey">
+<h1 class="text-center">Resources</h1>
+<hr width=20%; color="green"; size="50">
+<h4 class="text-dark font-weight-light text-center">Find all the ideas you need for each area of the Award</h4><br>
+
+<div class="container-fluid">
+<p>
+    <button type="button" class="btn btn-light"><a href="#1" class="text-dark">Ideas for Service</a></button>
+    <button type="button" class="btn btn-light"><a href="#2" class="text-dark">Ideas for Physical Recreation</a></button>
+    <button type="button" class="btn btn-light"><a href="#3" class="text-dark">Ideas for Skill</a></button>
+    <button type="button" class="btn btn-light"><a href="#4" class="text-dark">Ideas for Adventurous Journey</a></button>
+    <button type="button" class="btn btn-light"><a href="#5" class="text-dark">Ideas for Residential Project</a></button><br><br>
+    <a href="#6" class="text-dark">Gear List</a>
+  </p>
+</div>
+<style>
+  .col-6{
+    border: 0px solid lightgrey;
+    padding: 0em 0em;
+  }
+</style>
+
+<br><br>
+<div class="container bg-light border border-bottom-0">
+  <div class="row align-items-center">
+    <div class="col-6 px-4"> 
+      <h2 class="text-center">Service</h2>
+      <h5 class="text-dark text-center font-weight-light">Service is all about helping the community. How can you get stuck in?</h6>
+
+      <h6><ul class="list-unstyled">
+          <li>Here are some ideas to get you thinking, helping out in any way you can is giving back to your community
+              <ul>
+                  <li>Join a local community garden</li>
+                  <li>Babysitting</li>
+                  <li>Dog walking</li>
+                  <li>Mowing lawns</li>
+                  <li>Visit the elderly</li>
+                  <li>Bake for a charity e.g. Womens Refuge</li>
+              </ul>
+          </li>
+      </ul>
+    </h6></div>
+    <div class="col-6"><img class="img-fluid" src="images/advenJ_900.jpg" alt="road"></div>
   </div>
-
-<div class="container p-3 my-3 text-grey "">
-  <div class="container-fluid text-grey text-center"> 
-    
-
-  <div class="card-deck">
-    <div class="card bg-white">
-      <div class="container1">
-        <img class="card-img-top img-fluid" src="images/hut.jpg" alt="street">
-        <div class="overlay">
-          <h5>Bronze</h5>
-          <p> For ages 14+ </p>
-        </div>
+</div>
+<div class="container bg-light border border-bottom-0">
+  <div class="row align-items-center">
+    <div class="col-6"><img class="img-fluid" src="images/physRec-.jpg" alt="road"></div>
+    <div class="col-6 px-4">
+      <h2 class="text-center">Physical Recreation</h3>
+        <h5 class="text-success text-center font-weight-light">Physical recreation is about getting busy to stay healthy and fit!</h6>
+          <h6>
+            <ul class="list-unstyled">
+                <li class="font-weight-light">Remember you can use a sport that you already play but here are some other activites you could try
+                    <ul>
+                        <li>Running</li>
+                        <li>Learn to play tennis</li>
+                        <li>Working out</li>
+                        <li>Mountain walking</li>
+                        <li>Cycling / Mountain Biking</li>
+                    </ul>
+                </li>
+            </ul>
+          </h6> </div>
+  </div>
+</div>
+<div class="container bg-light border border-bottom-0">
+  <div class="row">
+    <div class="col-6 px-4">
+      <h2 class="text-center" id=3> <br>Skill</h3>
+        <h5 class="text-success text-center font-weight-light">Learning a new skill is so important in improving and updating your lifestyle.</h6>
+          <h6>
+            <ul class="list-unstyled">
+                
+                    <ul>
+                        <li>Play an instrument</li>
+                        <li>Learn a language</li>
+                        <li>Knit or crochet something</li>
+                        <li>Learn to cook or bake</li>
+                    </ul>
+                </li>
+            </ul>
+          </h6>
+    </div>
+    <div class="col-6"><img class="img-fluid" src="images/skill-.jpg" alt="road"></div>
+  </div>
+</div>
+<div class="container bg-light border border-bottom-0">
+  <div class="row">
+    <div class="col-6"><img class="img-fluid" src="images/advenJ_900.jpg" alt="road"></div>
+    <div class="col-6 px-4"> 
+      <h2 class="text-center">Adventurous Journey</h2>
+      <h5 class="text-success text-center font-weight-light">This is the fun part! What kind of outdoor activities do you enjoy?</h6>
+        <h6>
+          <ul class="list-unstyled">
+              <li>Here are some ideas to get you thinking, helping out in any way you can is giving back to your community
+                  <ul>
+                    <li>Tramping</li>
+                    <li>Kayaking</li>
+                    <li>Sailing</li>
+                    <li>Horse Trekking</li>
+                  </ul>
+              </li>
+          </ul>
+        </h6> 
       </div>
-      </div>
-    
-      <div class="card bg-white">
-        <div class="container1">
-          <img class="card-img-top" src="images/hut.jpg" alt="street">
-          <div class="overlay">
-            <h5>Silver</h5>
-            <p> For ages 15+ </p>
-          </div>
-        </div>
-        </div>
-
-        <div class="card bg-white">
-          <div class="container1">
-            <img class="card-img-top" src="images/hut.jpg" alt="street">
-            <div class="overlay">
-              <h5>Gold</h5>
-              <p> For ages 16+ </p>
-            </div>
-          </div>
-          </div>
   </div>
+</div>
+<div class="container bg-light border">
+  <div class="row">
+    <div class="col-6 px-4 text-center"><h2 id=5><br>Residential Program</h3>
+      <h5 class="text-success text-center font-weight-light">Time for a busy holiday? Here are some ideas for a four night/five day stay.</h6>
+        <h6>
+          <ul class="list-unstyled">
+              <li>Here are some programs where you can learn a new skill and meet new people
+                  <ul>
+                    <li>Hands on Otago</li>
+                    <li>Spirit of Adventure</li>
+                    <li>Outward Bound</li>
+                    <li>Help out at a camp eg. YMCA</li>
+                  </ul>
+              </li>
+          </ul>
+        </h6> </div>
+    <div class="col-6"><img class="img-fluid" src="images/resProg-.jpg" alt="road"></div>
   </div>
- 
-  <br>
-  <hr/>
-  <br>
-  <div class="container-fluid">
-    <div class="container p-3 my-3 text-grey bg-light">
-    <h1 class="text-center">About</h1>
-    <h3>What is it?</h3>
-    <h5 class="text-success font-weight-light">The Duke of Edinburgh’s Award is designed to educate young people outside of the classroom.</h5>
-    <p>Open to anyone 14-24 years old,
-    regardless of background, culture, physical ability, skills and interests, the award is perfect for experiencing the outdoors,
-    contributing to the community through service, and learning many new skills. In over 130 countries, this award is recognised
-    world wide and has inspired millions of young people to get up and involve themselves in the world.</p><p></p>The Award is comprised of
-    three levels and four sections - Skills, Voluntary Service, Physical Recreation and Adventurous Journey. Participants complete
-    all four sections at each level in order to achieve their Award. At Gold level, participants also complete a Residential Project.</p>
-    <h3>History</h3>
-    <h5 class="text-success font-weight-light"> The Award was founded in 36456....</h5>
-    <p>Pressures originating ‘outside’ the state apparatus. These include demands from people who see a large state bureaucracy as
-    inefficient and wasteful, demands from business interests who claim that they can overcome these inefficiencies, and
-    pressures from client groups who seek to reduce their dependency on the welfare state by having more control over the
-    services on which they depend. Clearly, this variety of calls for privatisation means that it is not a process with a
-    uniform outcome; there exists a correspondingly wide variety of forms of privatisation.ressures originating ‘outside’ the state apparatus. 
-    These include demands from people who see a large state bureaucracy as </p><p>
-    inefficient and wasteful, demands from business interests who claim that they can overcome these inefficiencies, and
-    pressures from client groups who seek to reduce their dependency on the welfare state by having more control over the
-    services on which they depend. Clearly, this variety of calls for privatisation means that it is not a process with a
-    uniform outcome; there exists a correspondingly wide variety of forms of privatisation.</p>
-    </div>
-    <div class="card-deck">
-    <div class="card bg-white">
-    <div class="card-body text-center">
-    <p>img coming</p>
-    </div>
-    </div>
-    <div class="card bg-white">
-    <div class="card-body text-center">
-    <p>img coming</p>
-    </div>
-    </div>
-    <div class="card bg-white">
-    <div class="card-body text-center">
-    <p>img coming</p>
-    </div>
-    </div>
-    <div class="card bg-white">
-    <div class="card-body text-center">
-    <p>img coming</p>
-    </div>
-    </div>
-    </div>
-    </div>  
-
-</div>
 </div>
 
 
-</div>
-</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<br><br>
+<div class="container-fluid bg-light text-center p-3">
 <div class="footer">
-  <div class=" card bg-dark text-light text-center">
-    <p> This is a footer</p>
+  
+    <h5 class="text-success font-weight-light">Nia Butler 2021</h6>
   </div>
-</div>
-</div>
+
 </body>
