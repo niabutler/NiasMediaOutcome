@@ -31,7 +31,7 @@
 }
     .bg-img {
   /* The image used */
-  background-image: url("images/carousel_sunset.jpg");
+  background-image: url("images/bannerMain.jpg");
 
   min-height: 60%;
 
@@ -44,22 +44,15 @@
   position: static;
 }
 .overlay {
-  position:absolute;
-  top: 50%;
-  left: 50%;
-  padding-top: 1.25em;
-  padding-left: 2em;
-  padding-right: 2em;;
-  transform: translate(-50%, -50%);
-  opacity: 1;
-  transition: .5s ease;
-  color: white;
-  background-color: rgba(0,0,0,0.5);
-  border-radius: 0.2em;
+border-radius: 0.7;
 }
 
+
 .over-set:hover .overlay {
-  opacity: 0;
+  opacity: 1;
+  border-top: 5px green;
+  transition: .3s ease;
+  border-radius: 0.7em;
 }
 
 .over-set:hover .overlay-detail{
@@ -67,14 +60,8 @@
     }
 
 .overlay-detail{ 
+  
   position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 4.1%;
-  right: 0;
-  height: 100%;
-  width: 92%;
-  font-size: 1em;
   color:white;
   background-color: rgba(45,48,58,0.7);
   padding: 0em; 
@@ -110,12 +97,15 @@ hr{
 
 .bottom-left1 {
   position: absolute;
-  bottom: 12%;
-  left: 8%;
-  color: whitesmoke;
-  font-size: 1.7em;
-  text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+  bottom: 40%;
+  left: 27%;
+  color: rgb(43,44,44);
+  font-size: 1.3em;
   font-weight: lighter;
+  padding: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: rgba(250,250,250, 0.7);
 }
 .bottom-left2 {
   position: absolute;
@@ -131,12 +121,31 @@ hr{
   color: rgba(0,0,0,0.5);
 
 }
+
+#more {display: none;}
     </style>
+
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+  </script>
 </head>
 
-<body>
-  <div class="bg-img">
-    <nav class="navbar navbar-expand-sm navbar-light bg-style">
+<body style="background-color:white">
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
       aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
@@ -158,120 +167,133 @@ hr{
         </ul>
       </div>
     </nav>
-  </div>
+<div class="container-fluid p-0 bg-light">
+<img class="img-fluid border-img" src="images/bannerMain2.jpg" alt="street">
+<br><br>
+<h1 class="text-dark text-center font-weight-light"> Throw yourself into the Duke of Edinburgh experience today</h1>
+<br>
+</div>
 
   
-  <!--<div class="jumbotron jumbotron-fluid"> -->
-    <div class="container-fluid p-5 text-center bg-white">
-      <div class="h7">Welcome</div>
-      <hr width=20%; color="green"; size="50">
-      <h4 class="text-success font-weight-light">Helping you reach your goals!</h4> 
-      <h4 class="text-dark font-weight-light">We will provide you with the tips and tricks to get you through your 
-        Duke of Edinburgh Adventure.</h4>
-    </div>
-  </div>
 
-<div class="container p-3 my-3 text-grey"">
-  <div class="container-fluid text-grey text-center"> 
-
-    <div class="row pb-4">
+    <div class="container bg-white pt-5 p-3 text-center">
+    <div class="row p-4">
       <div class="col-lg-4 position-relative over-set">
-        <img class="img-fluid" src="images/bronze.jpg" alt="street">
-        <div class="bottom-left1">Bronze Award</div>
-        <div class="bottom-left2">For young people aged 14+</div>
-        <!-- <div class="overlay"><h4>Bronze</p></div> -->
-        <div class="overlay-detail">
-          <div class="text">For more information click <a class="text-white" href="experience.html">here.</a></div>
-      </div>
+        <a href="experience.html">
+        <img class="img-fluid shadow overlay" src="images/dance2.jpg" alt="Group of trampers on a sunny day"></a>
+        <a href="experience.html"><div class="bottom-left1">Bronze Award</div></a>
     </div>
+
 
     <div class="col-lg-4 position-relative over-set">
-      <img class="img-fluid" src="images/silver.jpg" alt="street">
+      <a href="experience.html">
+      <img class="img-fluid shadow overlay" src="images/DB3.jpg" alt="A group of dancers sitting for a photo"></a>
       <!-- <div class="overlay"><h4> Silver</p></div>-->
-        <div class="bottom-left1">Silver Award</div>
-        <div class="bottom-left2">For young people aged 15+</div>
-      <div class="overlay-detail">
-        <div class="text">For more information click <a class="text-white" href="experience.html">here.</a></div>
-    </div>
+        <a href="experience.html"><div class="bottom-left1">Silver Award</div></a>  
   </div>
 
   
   <div class="col-lg-4 position-relative over-set">
-    <img class="img-fluid" src="images/gold.jpg" alt="street">
+    <a href="experience.html">
+    <img class="img-fluid shadow overlay" src="images/tramp1.jpg" alt="A group of trampers outside a hut"></a>
     <!--<div class="overlay"><h4> Gold</p></div>-->
-      <div class="bottom-left1">Gold Award</div>
-      <div class="bottom-left2">For young people aged 16+ </div>
-    <div class="overlay-detail">
-      <div class="text">For more information click <a class="text-white" href="experience.html">here.</a>.</div>
-  </div>
+        <a href="experience.html"><div class="bottom-left1">Gold Award</div></a>  
 </div>
-
-
-
+</div><br>
       </div>
-      <hr width=20%; color="green"; size="50">
-  </div>
-  </div>
+    </div>
+
+    <style>
+      #more {display: none;}
+      #more2{display: none;}
+      </style>
+      </head>
+      <body>
+      
   
-  <h4 class="font-weight-light text-dark text-center pb-4"> Here is some more information regarding the background of the Award...</h4> 
+      <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+      
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Read more"; 
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Read less"; 
+          moreText.style.display = "inline";
+        }
+      }
+
+      function myFunction2() {
+        var dots2 = document.getElementById("dots2");
+        var more2Text = document.getElementById("more2");
+        var btn2Text = document.getElementById("myBtn2");
+      
+        if (dots2.style.display === "none") {
+          dots2.style.display = "inline";
+          btn2Text.innerHTML = "Read more"; 
+          more2Text.style.display = "none";
+        } else {
+          dots2.style.display = "none";
+          btn2Text.innerHTML = "Read less"; 
+          more2Text.style.display = "inline";
+        }
+      }
+      </script>
+
+
+
   <div class="container-fluid bg-light">
-    <div class="container p-5 my-3 text-grey">
-    <h1 class="text-center">About the Award</h1>
-    <h3>What is it?</h3>
-    <h4 class="text-success font-weight-light">The Duke of Edinburgh’s Award is designed to educate young people outside of the classroom. </h5>
-    <p> Open to anyone 14-24 years old,
-      regardless of background, culture, physical ability, skills and interests, the award is perfect for experiencing the outdoors,
-      contributing to the community through service, and learning many new skills.</p> <p>In over 130 countries, this award is recognised
-    world wide and has inspired millions of young people to get up and involve themselves in the world.The Award is comprised of
-    three levels and four sections - Skills, Voluntary Service, Physical Recreation and Adventurous Journey. Participants complete
-    all four sections at each level in order to achieve their Award. At Gold level, participants also complete a Residential Project. 
-    To see the requirements for each level click <a class="text-dark" href="experience.html">here.</a></p>
-    <h3>History</h3>
-    <h4 class="text-success font-weight-light"> The Duke of Edinburgh’s International Award was founded in 1956.</h5>
-    <p class="font-weight-bold">HRH Prince Philip, Kurt Hahn, a German educationalist and Lord Hunt, leader of the first successful expedition of Everest 
-      first founded the Duke of Edinburgh Award. The idea came from a concern for the development of boys after World War II, 
-      because of the gap between leaving school at 15 and entering the National Service at 18.</p><p>
-    inefficient and wasteful, demands from business interests who claim that they can overcome these inefficiencies, and
-    pressures from client groups who seek to reduce their dependency on the welfare state by having more control over the
-    services on which they depend. Clearly, this variety of calls for privatisation means that it is not a process with a
-    uniform outcome; there exists a correspondingly wide variety of forms of privatisation.</p>
-    </div>
-  </div>
+    <div class="container p-5 text-grey bg-light">
+    <h1 class="text-center font-weight-light">About the Award</h1><br>
+    <div class="row">
+      <div class="col-md-6 bg-light">
+<div class="Card border-0 shadow p-3">
+  <div class="card-body">
+        <h2>What is it?</h2>
+        <h4 class="font-weight-light text-success">The Duke of Edinburgh’s Award is designed to educate young people outside of the classroom.</h4>
+        <p>Open to anyone 14-24 years old,
+          regardless of background, culture, physical ability, skills and interests, the award is perfect for experiencing the outdoors,
+          contributing to the community through service, and learning many new skills.<span id="dots"> </span><span id="more"><br><br>
+         In over 130 countries, this award is recognised
+          world wide and has inspired millions of young people to get up and involve themselves in the world. <br><br>The Award is comprised of
+          three levels and four sections - Skills, Voluntary Service, Physical Recreation and Adventurous Journey. Participants complete
+          all four sections at each level in order to achieve their Award. <br><br>At Gold level, participants also complete a Residential Project. 
+          To see the requirements for each level click <a class="text-dark" href="experience.html">here.</a>
+          </span>
+        </p>
+        <button class="btn btn-light" onclick="myFunction()" id="myBtn">Read more</button>
+      </div>
+      </div>
+      </div>
 
-  <h1 class="text-dark font-weight-light text-center">Gallery</h2>
-    <hr width=20%; color="green"; size="50">
-    <div class="container p-5">
-      <div class="row">
-    <div class="col-md-3">
-      <img class="img-fluid" src="images/gal3-.jpg" alt="street">
-      <div class="bottom-left2">Tongariro National Park</div>
+      <div class="col-md-6 bg-light">
+        <div class="Card border-0 shadow p-3">
+          <div class="card-body">
+        <h2>History</h2>
+        <h4 class="font-weight-light text-success">The Duke of Edinburgh’s International Award was founded in 1956.</h4>
+        <p>HRH Prince Philip, Kurt Hahn, 
+          a German educationalist and Lord Hunt, leader of the first successful expedition of Everest 
+          first founded the Duke of Edinburgh Award.<span id="dots2"> </span><span id="more2"><br><br>
+        The idea came from a concern for the development of boys after World War II, 
+          because of the gap between leaving school at 15 and entering the National Service at 18.
+        <br><br>.....
+          </span>
+        </p>
+        <button class="btn btn-light" onclick="myFunction2()" id="myBtn2">Read more</button>
+      </div>
     </div>
-    <div class="col-md-3">
-      <img class="card-img" src="images/gal2-.jpg" alt="street">
-      <div class="bottom-left2">Tongariro National Park</div>
     </div>
-      <div class="col-md-3">
-        <div class="bottom-left2">Tongariro Alpine Crossing</div>
-      <img class="card-img" src="images/gal1-.jpg" alt="street">
     </div>
-      <div class="col-md-3">
-      <img class="card-img" src="images/gal4-.jpg" alt="street">
-      <div class="bottom-left2">Bay of Islands</div>
-    </div>
+<br>
 
-    </div>
-    </div>
-
-   
-
-</div>
-</div>
-</div>
-</div>
 
 <div class="container-fluid bg-light text-center p-3">
   <div class="footer">
-    
       <h5 class="text-dark font-weight-light">© Escape, Nia Butler 2021 </h6>
     </div>
 </body>

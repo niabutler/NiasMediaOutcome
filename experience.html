@@ -1,6 +1,6 @@
 <html lang="en">
 <head>
-  <title>Home</title>
+  <title>Experience</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
@@ -134,151 +134,218 @@ hr{
 .bronzeb{
   background-color: rgb(164,102,42);
 }
+
+.col-md-6{
+  padding: 0px;
+  margin: 0px;
+}
     </style>
+
+<script>
+  function myFunction() {
+    var dots = document.getElementById("dots");
+    var moreText = document.getElementById("more");
+    var btnText = document.getElementById("myBtn");
+  
+    if (dots.style.display === "none") {
+      dots.style.display = "inline";
+      btnText.innerHTML = "Read more"; 
+      moreText.style.display = "none";
+    } else {
+      dots.style.display = "none";
+      btnText.innerHTML = "Read less"; 
+      moreText.style.display = "inline";
+    }
+  }
+
+  function myFunction2() {
+    var dots2 = document.getElementById("dots2");
+    var more2Text = document.getElementById("more2");
+    var btn2Text = document.getElementById("myBtn2");
+  
+    if (dots2.style.display === "none") {
+      dots2.style.display = "inline";
+      btn2Text.innerHTML = "Read more"; 
+      more2Text.style.display = "none";
+    } else {
+      dots2.style.display = "none";
+      btn2Text.innerHTML = "Read less"; 
+      more2Text.style.display = "inline";
+    }
+  }
+  </script>
 </head>
 
-<body>
-  <div class="bg-img">
-    <nav class="navbar sticky-top navbar-expand-sm navbar-light">
-      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
-      aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
-      <div class="collapse navbar-collapse justify-content-center"  id="navbarNav">
-        <ul class="navbar-nav">
-          <li class="nav-item px-2">
-            <a class="nav-link font-weight-bolder"  href="index.html">HOME</a></h4>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="experience.html">EXPERIENCE</a>
-          </li>
-          <li class="nav-item px-2">
-            <a class="nav-link" href="resources.html">RESOURCES</a>
-          </li>
-          <li class="nav-item px-2">
-              <a class="nav-link"  href="getStarted.html">GET STARTED</a>
-            </li>
-        </ul>
-      </div>
-    </nav>
-  </div>
+<body class="bg-light"style="background-color:;">
 
-
-
-<div class="container-fluid p-3">
-  <br>
-  <h1 class="text-center">Experince the Award</h1>
-  <hr width=20%; color="green"; size="50">
-<br>
-<h4 class="font-weight-light text-dark text-center pb-2"> Find the requirements for each level of the Award</h4>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
+    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse justify-content-center"  id="navbarNav">
+      <ul class="navbar-nav">
+        <li class="nav-item font-weight-bolder">
+          <a class="nav-link px-2"  href="index.html">HOME</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="experience.html">EXPERIENCE</a>
+        </li>
+        <li class="nav-item px-2">
+          <a class="nav-link" href="resources.html">RESOURCES</a>
+        </li>
+        <li class="nav-item px-2">
+            <a class="nav-link"  href="getStarted.html">GET STARTED</a>
+          </li>
+      </ul>
+    </div>
+  </nav>
+<div class="container-fluid p-0 bg-light">
+<img class="img-fluid border-img" src="images/bannerMain2.jpg" alt="street">
 </div>
 
 
-<div class="container-fluid">
-<div class="container p-3 my-3 bg-white text-grey">
 
 
-<p>
-    <button type="button" class="btn bronzeb"><a href="#1" class="text-light">Bronze</a></button>
-    <button type="button" class="btn btn-secondary"><a href="#2" class="text-light">Silver</a></button>
-    <button type="button" class="btn btn-warning"><a href="#3" class="text-dark">Gold</a></button>
-</p><br>
+<div class="container bg-light p-3">
+  <br>
+  <h1 class="text-center font-weight-light">Experience the Award</h1>
+</div>
+
+<div class="container p-3 bg-light text-grey">
+
+  <style>
+    #more {display: none;}
+    #more2{display: none;}
+  </style>
+
+<div class="card shadow" style="width: 100%;">
+    <img class="card-img-top" src="images/carousel_sunset.jpg" alt="Card image">
+    <div class="card-body">
+      <h3 class="card-title" id=1>Bronze Award</h4>
+      <p class="card-text"><h5 class="text-success font-weight-light">Ages 14+</h5>
+        <p>Bronze is the first level of the Award, and you can start it in the school year that you turn 14. 
+            Bronze takes a minimum of 6 months to complete.<span id="dots"> </span>
+            
+            
+            <div id="more" style="background-color: green;">    hfjhjhfjf   
+            <p>There are tttt three specific sections—Voluntary Service, Skills and Physical Recreation—that you'll choose your activities from, plus an Adventurous Journey to complete.
+                The table below gives you a good idea of what time is involved for each section. <br><br>If you're already playing a sport, learning a skill (e.g. learning to drive or play 
+                a musical instrument), or helping others in your community, once registered you will be able to use these activities to count towards your required hours.
+            </p>
+          
+            <div class="container">
+              <h5> Requirements - 1hr per week</h5>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+                      Service
+                      <span class="badge bronze"><h6>3 months</h6></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Physical Recreation
+                      <span class="badge bronze"><h6>3 months</h6></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+                      Skill
+                      <span class="badge bronze"><h6>3 months</h6></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Adventurous Journey
+                        <span class="badge bronze"><h6>2 days / 1 night</h6></span>
+                      </li>
+                  </ul>
+                </div>
+        </div>
+ 
+            <br><button class="btn btn-light" onclick="myFunction()" id="myBtn">Read more</button><br>
+       </p>
+    </div>
+  </div><br><br>
+
+  <div class="card shadow" style="width: 100%;">
+    <img class="card-img-top" src="images/carousel_ngauruhoe.jpg" alt="Card image">
+    <div class="card-body">
+      <h3 class="card-title" id=1>Silver Award</h4>
+      <p class="card-text"><h5 class="text-success font-weight-light">Ages 15+</h5>
+        <p>Silver is the second level of the Award, and takes a minimum of 6 months to complete if you have completed Bronze or 12 months if you have not completed Bronze - Direct Entry.</p><span id="dots2">.</span><span id="more2">
+            
+            <p>You can start your Silver Award as soon as you’ve completed your Bronze. If you have not completed Bronze then you must be 15 to start Silver.  
+                There are three specific sections—Voluntary Service, Skills and Physical Recreation—that you'll choose your activities from, plus an Adventurous Journey to complete.
+                The table below gives you a good idea of what time is involved for each section. If you're already playing a sport, learning a skill (e.g. learning to drive or play a 
+                musical instrument), or helping others in your community, once registered, you will be able to use these activities to count towards your required hours.
+            </p>
+        <div class="container">
+            <h5> Requirements - 1hr per week</h6>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+                      Service
+                      <span class="badge text-secondary"><h6>6 months</h6></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Physical Recreation
+                      <span class="badge text-secondary"><h6>6 months</h6></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+                      Skill
+                      <span class="badge text-secondary"><h6>6 months</h6></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Adventurous Journey
+                        <span class="badge text-secondary"><h6>3 days / 2 nights</h6></span>
+                      </li>
+                  </ul>
+        </div>
+        </span>
+            <br><button class="btn btn-light" onclick="myFunction2()" id="myBtn2">Read more</button><br>
+       
+    </div>
+  </div><br><br>
+
+
+  <div class="card shadow" style="width: 100%;">
+    <img class="card-img-top" src="images/carousel_group.jpg" alt="Card image">
+    <div class="card-body">
+      <h3 class="card-title" id=1>Gold Award</h4>
+      <p class="card-text"><h5 class="text-success font-weight-light">Ages 16+</h5>
+        <p>Gold is the third and final level of the Award, and takes a minimum of 12 months to complete. If you have not completed Bronze and Silver there are extra requirements, you can read about them here.</p><span id="dots2">.</span><span id="more2">
+            
+            <p>You can start your Gold Award from the age of 16. There are three specific sections—Voluntary Service, Skills and Physical Recreation—that you'll choose your activities from, plus an Adventurous 
+                Journey and a Gold Residential Project (a Gold-only section) to complete. The table below gives you a good idea of what time is involved for each section. If you're already playing a sport, learning 
+                a skill (e.g. learning to drive or play a musical instrument), or helping others in your community, once registered, you will be able to use these activities to count towards your required hours
+            </p>
+        <div class="container">
+            <h5> Requirements - 1hr per week</h6>
+                <ul class="list-group">
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+                      Service
+                      <span class="badge text-warning"><h6>12 months</span></h6>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                      Physical Recreation
+                      <span class="badge text-warning"><h6>12 months</h6></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+                      Skill
+                      <span class="badge text-warning"><h6>12 months</h6></span>
+                    </li>
+                    <li class="list-group-item d-flex justify-content-between align-items-center">
+                        Adventurous Journey
+                        <span class="badge text-warning"><h6>4 days / 3 nights</h6></span>
+                      </li>
+                      <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
+                        Residential Project
+                        <span class="badge text-warning"><h6>5 days / 4 nights</h6></span>
+                      </li>
+                  </ul>
+        </div>
+        </span>
+            <br><button class="btn btn-light" onclick="myFunction2()" id="myBtn2">Read more</button><br>
+       
+    </div>
+  </div><br><br>
 
 
 
-<h3 id=1>Bronze Award</h3>
-<h5 class="text-success font-weight-light">Ages 14+</h5><br>
-<h6> Requirements</h6>
-
-<ul class="list-group">
-    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
-      Service
-      <span class="badge bronze"><h6>3 months</h6></span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-      Physical Recreation
-      <span class="badge bronze"><h6>3 months</h6></span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
-      Skill
-      <span class="badge bronze"><h6>3 months</h6></span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        Adventurous Journey
-        <span class="badge bronze"><h6>2 days / 1 night</h6></span>
-      </li>
-  </ul><br>
-
-<p>Bronze is the first level of the Award, and you can start it in the school year that you turn 14. Bronze takes a minimum of 6 months to complete.
-    There are three specific sections—Voluntary Service, Skills and Physical Recreation—that you'll choose your activities from, plus an Adventurous Journey to complete.
-    The table below gives you a good idea of what time is involved for each section. If you're already playing a sport, learning a skill (e.g. learning to drive or play 
-    a musical instrument), or helping others in your community, once registered you will be able to use these activities to count towards your required hours.
-</p><br>
-
-<h3 id=2>Silver Award</h3>
-<h5 class="text-success font-weight-light">Ages 15+</h5><br>
-<h6> Requirements</h6>
-
-<ul class="list-group">
-    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
-      Service
-      <span class="badge text-secondary"><h6>6 months</h6></span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-      Physical Recreation
-      <span class="badge text-secondary"><h6>6 months</h6></span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
-      Skill
-      <span class="badge text-secondary"><h6>6 months</h6></span>
-    </li>
-    <li class="list-group-item d-flex justify-content-between align-items-center">
-        Adventurous Journey
-        <span class="badge text-secondary"><h6>3 days / 2 nights</h6></span>
-      </li>
-  </ul><br>
-
-<p>Silver is the second level of the Award, and takes a minimum of 6 months to complete if you have completed Bronze or 12 months if you have not completed Bronze - Direct Entry.
-    You can start your Silver Award as soon as you’ve completed your Bronze. If you have not completed Bronze then you must be 15 to start Silver.  
-    There are three specific sections—Voluntary Service, Skills and Physical Recreation—that you'll choose your activities from, plus an Adventurous Journey to complete.
-    The table below gives you a good idea of what time is involved for each section. If you're already playing a sport, learning a skill (e.g. learning to drive or play a 
-    musical instrument), or helping others in your community, once registered, you will be able to use these activities to count towards your required hours.
-</p><br>
-
-
-    <h3 id=3>Gold Award</h3>
-    <h5 class="text-success font-weight-light">Ages 16+</h5><br>
-    <h6> Requirements</h6>
-    
-    <ul class="list-group">
-        <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
-          Service
-          <span class="badge text-warning"><h6>12 months</span></h6>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-          Physical Recreation
-          <span class="badge text-warning"><h6>12 months</h6></span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
-          Skill
-          <span class="badge text-warning"><h6>12 months</h6></span>
-        </li>
-        <li class="list-group-item d-flex justify-content-between align-items-center">
-            Adventurous Journey
-            <span class="badge text-warning"><h6>4 days / 3 nights</h6></span>
-          </li>
-          <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
-            Residential Project
-            <span class="badge text-warning"><h6>5 days / 4 nights</h6></span>
-          </li>
-      </ul><br>
-    
-    <p>Gold is the third and final level of the Award, and takes a minimum of 12 months to complete. If you have not completed Bronze and Silver there are extra requirements, you can read about them here.
-        You can start your Gold Award from the age of 16. There are three specific sections—Voluntary Service, Skills and Physical Recreation—that you'll choose your activities from, plus an Adventurous 
-        Journey and a Gold Residential Project (a Gold-only section) to complete. The table below gives you a good idea of what time is involved for each section. If you're already playing a sport, learning 
-        a skill (e.g. learning to drive or play a musical instrument), or helping others in your community, once registered, you will be able to use these activities to count towards your required hours
-    </p>
-  </div>
 
 <div class="container">
 <div id="demo" class="carousel slide" data-ride="carousel">
@@ -321,7 +388,8 @@ hr{
 <br>
 <div class="container-fluid bg-light text-center p-3">
   <div class="footer">
-        <h5 class="text-dark font-weight-light">© Escape, Nia Butler 2021 </h6>
+    
+      <h5 class="text-dark font-weight-light">© Escape, Nia Butler 2021 </h6>
     </div>
-
 </body>
+
