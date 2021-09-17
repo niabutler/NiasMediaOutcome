@@ -7,123 +7,8 @@
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-
-  <style>
-    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;1,400&display=swap');
-    body{
-      font-family: 'Raleway', sans-serif;
-      font-weight: bold;
-      
-      font-size: 100%;
-      
-    }
-
-    .nav-container{
-	    max-width: 90%;
-	    margin: auto;
-}
-
-.nav{
-  float: right;
-  width: 25%;
-  text-align: center;
-  overflow:visible;
-}
-    .bg-img {
-  /* The image used */
-  background-image: url("images/bannerMain.jpg");
-
-  min-height: 60%;
-
-  /* Center and scale the image nicely */
-  background-position: center;
-  background-repeat: no-repeat;
-  background-size: cover;
-
-  /* Needed to position the navbar */
-  position: static;
-}
-.overlay {
-border-radius: 0.7;
-}
-
-
-.over-set:hover .overlay {
-  opacity: 1;
-  border-top: 5px green;
-  transition: .3s ease;
-  border-radius: 0.7em;
-}
-
-.over-set:hover .overlay-detail{
-        opacity: 1;
-    }
-
-.overlay-detail{ 
+  <link rel="stylesheet" href="doe_styles.css">
   
-  position: absolute;
-  color:white;
-  background-color: rgba(45,48,58,0.7);
-  padding: 0em; 
-  transition: 1s ease;
-  opacity:0;
-  align-content: center;
-}
-
-.text{
-  position: absolute;
-  top:50%;
-  left:0;
-  transform: translate(0%, -50%);
-  padding: 2em;
-  text-align: center;
-  cursor: default;
-}
-
-hr{
-  line-height: 3px;
-}
-
-
-.container1{
-  padding: 0%;
-  align-content: center;
-  margin: 0.7%;
-}
-
-.h7{
-  font-size: 3.5em;
-}
-
-.bottom-left1 {
-  position: absolute;
-  bottom: 40%;
-  left: 27%;
-  color: rgb(43,44,44);
-  font-size: 1.3em;
-  font-weight: lighter;
-  padding: 3%;
-  padding-left: 5%;
-  padding-right: 5%;
-  background-color: rgba(250,250,250, 0.7);
-}
-.bottom-left2 {
-  position: absolute;
-  bottom: 4%;
-  left: 8%;
-  color: whitesmoke;
-  font-size: 1em;
-  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
-  font-weight: lighter;
-}
-
-.bg-style{
-  color: rgba(0,0,0,0.5);
-
-}
-
-#more {display: none;}
-    </style>
 
 <script>
   function myFunction() {
@@ -204,18 +89,24 @@ hr{
     </div>
 
     <style>
+      /*
       #more {display: none;}
       #more2{display: none;}
+      */
+      .extras{
+        display: none;
+      }
       </style>
       </head>
       <body>
       
   
       <script>
-      function myFunction() {
-        var dots = document.getElementById("dots");
-        var moreText = document.getElementById("more");
-        var btnText = document.getElementById("myBtn");
+
+function change_visible(dots, more, button) {
+        var dots = document.getElementById(dots);
+        var moreText = document.getElementById(more);
+        var btnText = document.getElementById(button);
       
         if (dots.style.display === "none") {
           dots.style.display = "inline";
@@ -227,22 +118,7 @@ hr{
           moreText.style.display = "inline";
         }
       }
-
-      function myFunction2() {
-        var dots2 = document.getElementById("dots2");
-        var more2Text = document.getElementById("more2");
-        var btn2Text = document.getElementById("myBtn2");
       
-        if (dots2.style.display === "none") {
-          dots2.style.display = "inline";
-          btn2Text.innerHTML = "Read more"; 
-          more2Text.style.display = "none";
-        } else {
-          dots2.style.display = "none";
-          btn2Text.innerHTML = "Read less"; 
-          more2Text.style.display = "inline";
-        }
-      }
       </script>
 
 
@@ -258,7 +134,7 @@ hr{
         <h4 class="font-weight-light text-success">The Duke of Edinburgh’s Award is designed to educate young people outside of the classroom.</h4>
         <p>Open to anyone 14-24 years old,
           regardless of background, culture, physical ability, skills and interests, the award is perfect for experiencing the outdoors,
-          contributing to the community through service, and learning many new skills.<span id="dots"> </span><span id="more"><br><br>
+          contributing to the community through service, and learning many new skills.<span id="dots"> </span><span class="extras" id="more"><br><br>
          In over 130 countries, this award is recognised
           world wide and has inspired millions of young people to get up and involve themselves in the world. <br><br>The Award is comprised of
           three levels and four sections - Skills, Voluntary Service, Physical Recreation and Adventurous Journey. Participants complete
@@ -266,7 +142,7 @@ hr{
           To see the requirements for each level click <a class="text-dark" href="experience.html">here.</a>
           </span>
         </p>
-        <button class="btn btn-light" onclick="myFunction()" id="myBtn">Read more</button>
+        <button class="btn btn-light" onclick="change_visible('dots','more', 'myBtn')" id="myBtn">Read more</button>
       </div>
       </div>
       </div>
@@ -278,13 +154,13 @@ hr{
         <h4 class="font-weight-light text-success">The Duke of Edinburgh’s International Award was founded in 1956.</h4>
         <p>HRH Prince Philip, Kurt Hahn, 
           a German educationalist and Lord Hunt, leader of the first successful expedition of Everest 
-          first founded the Duke of Edinburgh Award.<span id="dots2"> </span><span id="more2"><br><br>
+          first founded the Duke of Edinburgh Award.<span id="dots2"> </span><span class="extras" id="more2"><br><br>
         The idea came from a concern for the development of boys after World War II, 
           because of the gap between leaving school at 15 and entering the National Service at 18.
         <br><br>.....
           </span>
         </p>
-        <button class="btn btn-light" onclick="myFunction2()" id="myBtn2">Read more</button>
+        <button class="btn btn-light" onclick="change_visible('dots2','more2', 'myBtn2')" id="myBtn2">Read more</button>
       </div>
     </div>
     </div>

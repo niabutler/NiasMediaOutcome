@@ -1,0 +1,73 @@
+
+
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;1,400&display=swap');
+    body{
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      font-size: 100%;
+    }
+
+  /* --- navigation -------------------------------------------------------------------------------------------------------------- */  
+
+.nav-container{
+    max-width: 90%;
+    margin: auto;
+}
+
+.nav{
+    float: right;
+    width: 25%;
+    text-align: center;
+    overflow:visible;
+}
+
+ /* --- images ------------------------------------------------------------------------------------------------------------------- */
+
+.over-set:hover .overlay {
+  opacity: 1;
+  transition: .3s ease;
+  border-radius: 0.7em;
+}
+    
+/* --- text ------------------------------------------------------------------------------------------------------------------- */   
+.bottom-left1 {
+  position: absolute;
+  bottom: 40%;
+  left: 27%;
+  color: rgb(43,44,44);
+  font-size: 1.3em;
+  font-weight: lighter;
+  padding: 3%;
+  padding-left: 5%;
+  padding-right: 5%;
+  background-color: rgba(250,250,250, 0.7);
+}
+
+.bottom-left2 {
+    position: absolute;
+    bottom: 4%;
+    left: 8%;
+    color: whitesmoke;
+    font-size: 1em;
+    text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+    font-weight: lighter;
+  }
+
+/* --- colour ------------------------------------------------------------------------------------------------------------------- */
+.bronze{
+  color: rgb(164,102,42);
+}
+
+.bronzeb{
+  background-color: rgb(164,102,42);
+}
+
+/* --- spacing ------------------------------------------------------------------------------------------------------------------- */
+row{
+    border: 5px;;
+  }
+
+.col-6{
+  padding: 0px;
+  margin: 0px;
+}

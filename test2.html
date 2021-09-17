@@ -1,51 +1,161 @@
 <html lang="en">
 <head>
-  <title>Experience</title>
+  <title>test 2</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
   <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-  <link rel="stylesheet" href="doe_styles.css">
-  
 
-<script>
-  function myFunction() {
-    var dots = document.getElementById("dots");
-    var moreText = document.getElementById("more");
-    var btnText = document.getElementById("myBtn");
-  
-    if (dots.style.display === "none") {
-      dots.style.display = "inline";
-      btnText.innerHTML = "Read more"; 
-      moreText.style.display = "none";
-    } else {
-      dots.style.display = "none";
-      btnText.innerHTML = "Read less"; 
-      moreText.style.display = "inline";
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100;0,200;0,500;1,400&display=swap');
+    body{
+      font-family: 'Raleway', sans-serif;
+      font-weight: bold;
+      
+      font-size: 100%;
+      
     }
-  }
 
-  function myFunction2() {
-    var dots2 = document.getElementById("dots2");
-    var more2Text = document.getElementById("more2");
-    var btn2Text = document.getElementById("myBtn2");
-  
-    if (dots2.style.display === "none") {
-      dots2.style.display = "inline";
-      btn2Text.innerHTML = "Read more"; 
-      more2Text.style.display = "none";
-    } else {
-      dots2.style.display = "none";
-      btn2Text.innerHTML = "Read less"; 
-      more2Text.style.display = "inline";
+    .nav-container{
+	    max-width: 90%;
+	    margin: auto;
+}
+
+.nav{
+  float: right;
+  width: 25%;
+  text-align: center;
+  overflow:visible;
+}
+    .bg-img {
+  /* The image used */
+  background-image: url("images/carousel_sunset.jpg");
+
+  min-height: 60%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  /* Needed to position the navbar */
+  position: static;
+}
+.overlay {
+  position:absolute;
+  top: 50%;
+  left: 50%;
+  padding-top: 1.25em;
+  padding-left: 2em;
+  padding-right: 2em;;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: .5s ease;
+  color: white;
+  background-color: rgba(0,0,0,0.5);
+  border-radius: 0.2em;
+}
+
+.over-set:hover .overlay {
+  opacity: 0;
+}
+
+.over-set:hover .overlay-detail{
+        opacity: 1;
     }
+
+.overlay-detail{ 
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 4.1%;
+  right: 0;
+  height: 100%;
+  width: 92%;
+  font-size: 1em;
+  color:white;
+  background-color: rgba(45,48,58,0.7);
+  padding: 0em; 
+  transition: 1s ease;
+  opacity:0;
+  align-content: center;
+}
+
+.text{
+  position: absolute;
+  top:50%;
+  left:0;
+  transform: translate(0%, -50%);
+  padding: 2em;
+  text-align: center;
+  cursor: default;
+}
+
+hr{
+  line-height: 3px;
+}
+
+
+.container1{
+  padding: 0%;
+  align-content: center;
+  margin: 0.7%;
+}
+
+.h7{
+  font-size: 3.5em;
+}
+
+.bottom-left1 {
+  position: absolute;
+  bottom: 12%;
+  left: 8%;
+  color: whitesmoke;
+  font-size: 1.7em;
+  text-shadow: 2px 1px 1px rgba(0,0,0,0.5);
+  font-weight: lighter;
+}
+.bottom-left2 {
+  position: absolute;
+  bottom: 4%;
+  left: 8%;
+  color: whitesmoke;
+  font-size: 1em;
+  text-shadow: 1px 1px 5px rgba(0,0,0,0.5);
+  font-weight: lighter;
+}
+
+.bronze{
+  color: rgb(164,102,42);
+}
+
+.bronzeb{
+  background-color: rgb(164,102,42);
+}
+    </style>
+
+    <script>
+        function myFunction2() {
+  var dots = document.getElementById("dots2");
+  var moreText = document.getElementById("more2");
+  var btnText = document.getElementById("myBtn2");
+
+  if (dots.style.display === "none") {
+    dots.style.display = "inline";
+    btnText.innerHTML = "Read more";
+    moreText.style.display = "none";
+  } else {
+    dots.style.display = "none";
+    btnText.innerHTML = "Read less";
+    moreText.style.display = "inline";
   }
-  </script>
+}
+    </script>
 </head>
 
-<body class="bg-light"style="background-color;">
+<body class="bg-light"style="background-color:;">
 
   <nav class="navbar navbar-expand-sm bg-dark navbar-dark sticky-top">
     <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" 
@@ -74,18 +184,21 @@
 </div>
 
 
+
+
 <div class="container bg-light p-3">
   <br>
-  <h1 class="text-center font-weight-light">Experience the Award</h1>
+  <h1 class="text-center">Experience the Award</h1>
 </div>
 
 <div class="container p-3 bg-light text-grey">
+<p>
+    <button type="button" class="btn bronzeb"><a href="#1" class="text-light">Bronze</a></button>
+    <button type="button" class="btn btn-secondary"><a href="#2" class="text-light">Silver</a></button>
+    <button type="button" class="btn btn-warning"><a href="#3" class="text-dark">Gold</a></button>
+</p><br>
 
-  <style>
-    #more {display: none;}
-    #more2{display: none;}
-    
-  </style>
+
 
 <div class="card shadow" style="width: 100%;">
     <img class="card-img-top" src="images/carousel_sunset.jpg" alt="Card image">
@@ -93,17 +206,14 @@
       <h3 class="card-title" id=1>Bronze Award</h4>
       <p class="card-text"><h5 class="text-success font-weight-light">Ages 14+</h5>
         <p>Bronze is the first level of the Award, and you can start it in the school year that you turn 14. 
-            Bronze takes a minimum of 6 months to complete.<span id="dots"> </span>
+            Bronze takes a minimum of 6 months to complete.</p><span id="dots2">.</span><span id="more2">
             
-            
-            <div id="more">   
             <p>There are three specific sections—Voluntary Service, Skills and Physical Recreation—that you'll choose your activities from, plus an Adventurous Journey to complete.
-                The table below gives you a good idea of what time is involved for each section. <br><br>If you're already playing a sport, learning a skill (e.g. learning to drive or play 
+                The table below gives you a good idea of what time is involved for each section. If you're already playing a sport, learning a skill (e.g. learning to drive or play 
                 a musical instrument), or helping others in your community, once registered you will be able to use these activities to count towards your required hours.
             </p>
-          
-            <div class="container">
-              <h5> Requirements - 1hr per week</h5>
+        <div class="container">
+            <h5> Requirements - 1hr per week</h6>
                 <ul class="list-group">
                     <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
                       Service
@@ -122,11 +232,10 @@
                         <span class="badge bronze"><h6>2 days / 1 night</h6></span>
                       </li>
                   </ul>
-                </div>
         </div>
- 
-            <br><button class="btn btn-light" onclick="myFunction()" id="myBtn">Read more</button><br>
-       </p>
+        </span>
+            <button class="btn btn-light" onclick="myFunction2()" id="myBtn2">Read more</button>
+       
     </div>
   </div><br><br>
 
@@ -164,56 +273,12 @@
                   </ul>
         </div>
         </span>
-            <br><button class="btn btn-light" onclick="myFunction2()" id="myBtn2">Read more</button><br>
+            <button class="btn btn-light" onclick="myFunction2()" id="myBtn2">Read more</button>
        
     </div>
   </div><br><br>
 
 
-  <div class="card shadow" style="width: 100%;">
-    <img class="card-img-top" src="images/carousel_sunset.jpg" alt="Card image">
-    <div class="card-body">
-      <h3 class="card-title" id=1>Bronze Award</h4>
-      <p class="card-text"><h5 class="text-success font-weight-light">Ages 14+</h5>
-        <p>Bronze is the first level of the Award, and you can start it in the school year that you turn 14. 
-            Bronze takes a minimum of 6 months to complete.<span id="dots"> </span>
-            
-            
-            <div id="more">   
-            <p>There are three specific sections—Voluntary Service, Skills and Physical Recreation—that you'll choose your activities from, plus an Adventurous Journey to complete.
-                The table below gives you a good idea of what time is involved for each section. <br><br>If you're already playing a sport, learning a skill (e.g. learning to drive or play 
-                a musical instrument), or helping others in your community, once registered you will be able to use these activities to count towards your required hours.
-            </p>
-          
-            <div class="container">
-              <h5> Requirements - 1hr per week</h5>
-                <ul class="list-group">
-                    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
-                      Service
-                      <span class="badge bronze"><h6>3 months</h6></span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                      Physical Recreation
-                      <span class="badge bronze"><h6>3 months</h6></span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center bg-light">
-                      Skill
-                      <span class="badge bronze"><h6>3 months</h6></span>
-                    </li>
-                    <li class="list-group-item d-flex justify-content-between align-items-center">
-                        Adventurous Journey
-                        <span class="badge bronze"><h6>2 days / 1 night</h6></span>
-                      </li>
-                  </ul>
-                </div>
-        </div>
- 
-            <br><button class="btn btn-light" onclick="myFunction()" id="myBtn">Read more</button><br>
-       </p>
-    </div>
-  </div><br><br>
-
-  
   <div class="card shadow" style="width: 100%;">
     <img class="card-img-top" src="images/carousel_group.jpg" alt="Card image">
     <div class="card-body">
@@ -251,7 +316,7 @@
                   </ul>
         </div>
         </span>
-            <br><button class="btn btn-light" onclick="myFunction2()" id="myBtn2">Read more</button><br>
+            <button class="btn btn-light" onclick="myFunction2()" id="myBtn2">Read more</button>
        
     </div>
   </div><br><br>
